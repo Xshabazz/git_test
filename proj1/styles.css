@@ -1,0 +1,55 @@
+div.header header { display: flex; grid-area: header; height: 100px; text-align: center; justify-items: center; }
+div.menu { grid-area: menu; display: flex; 
+flex-direction: row;
+text-align: center;
+}
+div.main { grid-area: main; }
+div.img { grid-area: right; }
+div.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 6;
+  grid-template-columns: 5;
+  grid:
+    'header header header header header'
+    'header header header header header'
+    'menu menu menu menu menu'
+    'main main main main main main'
+    'right right right right right'
+    'footer footer footer footer footer';
+    
+    
+}
+
+
+
+
+
+/*
+body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 8fr 5fr 3fr ;
+    grid-colum
+    width: 100%;
+}
+
+
+body header {
+grid-area: 1,1,4,4;
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial;
+color: rgb(69, 64, 64);
+font-size: 1.5em;
+background-image: url("pexels-jacob-prose-1987464.jpg");
+}
+
+nav {
+grid-area: 1,2,5,3;
+}
+div.body {
+    grid-area: 3,1,5,5;
+   
+
+}
